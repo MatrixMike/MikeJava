@@ -31,7 +31,8 @@ import java.util.Locale;
 import java.time.format.FormatStyle;
 
 public class DateTime2 {
-	
+// TODO fix print such that this works on Mac 07.04.2021 23:41:45
+// compiles but crashes on exec - seems locale may not be set 	
 	public static void main (String[] args) {
 		LocalDateTime localDateTime = LocalDateTime.now(); // Gets the current date and time	
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");  // ("dd-MM-yyyy")   ("HH:mm:ss")
