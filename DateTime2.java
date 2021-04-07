@@ -22,6 +22,8 @@
  */
  // 05.04.2021 16:07:13
  // https://stackabuse.com/how-to-get-current-date-and-time-in-java/
+ // https://www.baeldung.com/java-8-date-time-intro
+ // https://dotnetcodr.com/2015/01/17/localising-dates-in-java-8-using-datetimeformatter/
  
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -36,9 +38,10 @@ public class DateTime2 {
 //		System.out.println(date.format(formatter));	
 		System.out.println(localDateTime
 			.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG))  // was MEDIUM 
-//			.withLocale(Locale.UK)
+//			.withLocale(Locale.US)
 			);
-
+//DateTimeFormatter pattern = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL).withLocale(Locale.FRANCE);
+// System.out.println(utcDateZoned.format(pattern));
 	}
 }
 
