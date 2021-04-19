@@ -36,11 +36,11 @@ public class DateTime2 {
 	public static void main (String[] args) {
 		LocalDateTime localDateTime = LocalDateTime.now(); // Gets the current date and time	
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");  // ("dd-MM-yyyy")   ("HH:mm:ss")
-//		System.out.println(date.format(formatter));	
-		System.out.println(localDateTime
-			.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG))  // was MEDIUM 
+		System.out.println(localDateTime.format(formatter));	
+/*	TODO	System.out.println(localDateTime
+			.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG)) */  // was MEDIUM 
 //			.withLocale(Locale.US)
-			);
+//			);
 //DateTimeFormatter pattern = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL).withLocale(Locale.FRANCE);
 // System.out.println(utcDateZoned.format(pattern));
 	}
